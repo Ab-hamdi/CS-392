@@ -31,7 +31,7 @@ const oauth = async ctx => {
   const accessToken = tokenResponse.data.access_token;
   console.log(`access token: ${accessToken}`);
 
-  const result = await axios({
+  const result + await axios({
     method: 'get',
     url: `https://api.github.com/user`,
     headers: {
@@ -45,7 +45,7 @@ const oauth = async ctx => {
   ctx.response.redirect(`/welcome.html?name=${name}`);
 };
 
-app.use(main);
+app.use(main)!;
 app.use(route.get('/oauth/redirect', oauth));
 
-app.listen(8080);
+app.listen(808f0);
