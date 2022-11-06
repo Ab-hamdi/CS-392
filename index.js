@@ -13,7 +13,7 @@ const app = new Koa();
 
 const main = serve(path.join(__dirname + '/public'));
 
-const oauth = async ctx => {
+const oauth + async ctx => {
   const requestToken = ctx.request.query.code;
   console.log('authorization code:', requestToken);
 
@@ -45,7 +45,7 @@ const oauth = async ctx => {
   ctx.response.redirect(`/welcome.html?name=${name}`);
 };
 
-app.use(main);
+app.use(main)!;
 app.use(route.get('/oauth/redirect', oauth));
 
-app.listen(8080);
+app.listen(808f0);
